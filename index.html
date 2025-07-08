@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <style>
+      *{
+        margin: 0 50px; */
+      }
+      .bg-blue {
+        background-color: #6b3fe9;
+      }
+      .flex {
+        display: flex; 
+      }
+      .section-1 {
+        color: white;
+        padding: 20px;  
+      }
+      .section-1flex {
+        padding: 20px 0 0 0;
+      }
+      .section-1displayflex span {
+        margin: 20px !important;
+      }
+      .section-1displayflex {
+        padding: 20px 0 0 0;
+      }
+      .section-1button1 {
+        color: rgb(66, 138, 255);
+        border-radius: 20px;
+        font-size: 15px;
+        padding: 10px;
+      }
+      .section-4 {
+        background-color: rgb(154, 150, 150);
+        margin: 50px;
+      }
+      .section-5 {
+        color: white;
+        text-align: center;
+        padding: 200px;
+        border-radius: 0 0 200px 0;
+      }
+      .section-2 {
+        padding: 100px 50px;
+        border-radius: 0 0 200px 0;
+        color: white;
+      }
+      .section-2 .section-button {
+        background-color: aqua;
+      }
+      .section-3 .section-button,
+      .section-4 .section-button {
+        background-color: yellow;
+      }
+      .section-3,
+      .section-4 {
+        padding: 100px 50px;
+      }
+      .section-4 {
+        border-radius: 200px 0 0 0
+      }
+      .section-6 {
+        padding: 100px 50px;
+        margin: 50px;
+      }
+      .form-container{
+        background-color: gray;
+        border-radius: 20px;
+      }
+      .form-container form{
+        margin: 0;
+        padding: 30px;
+      }
+      .form-container input,
+      .form-container textarea {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
+        border: 1px solid #333;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .form-container button {
+        background-color: #dec573; /* Yellow button */
+        border: 2px solid #333;
+        border-radius: 20px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .section-7 {
+        padding: 50px 25px;
+        border-radius:200px 200px 0 0;
+        color: white;
+      }
+      .section-7flex {
+        display: flex;
+      }
+      .section-8 {
+        display: flex;
+        justify-content: center;
+        color: white;
+      }
+      .section-span {
+        color: #6b3fe9;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .section-h1 {
+        font-size: 40px;
+      }
+      .section-p {
+        font-size: 20px;
+      }
+      .section-button {
+        color: black;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+      .mb-10 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-1 bg-blue flex">
+      <div>
+        <h1 class="section-1flex">agency</h1>
+      </div>
+      <div class="section-1displayflex">
+        <span>Home </span>
+        <span>About Us</span>
+        <span>Our Service</span>
+      </div>
+      <div>
+        <button class="section-1button1">CONTACT</button>
+      </div>
+    </div>
+
+    <div class="section-2 bg-blue flex">
+      <div>
+        <h1 class="section-h1 mb-10">Creative</h1>
+        <p class="section-p mb-10">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+          iusto?
+        </p>
+        <button class="section-button">LEARN MORE</button>
+      </div>
+      <div>
+        <img src="https://anas.sidkos.com/css/img/page1.PNG" alt="" />
+      </div>
+    </div>
+
+    <div class="section-3 flex">
+      <div>
+        <img src="https://anas.sidkos.com/css/img/page2.PNG" alt="" />
+      </div>
+      <div>
+        <span class="section-span m-10">About</span>
+        <h1 class="section-h1 mb-10">Creative</h1>
+        <p class="section-p mb-10">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+          iusto?
+        </p>
+        <button class="section-button">LEARN MORE</button>
+      </div>
+    </div>
+    <div class="section-4 flex">
+      <div>
+        <span class="section-span m-10">Service</span>
+        <h1 class="section-h1 mb-10">Creative</h1>
+        <p class="section-p mb-10">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+          iusto?
+        </p>
+        <button class="section-button">LEARN MORE</button>
+      </div>
+      <div>
+        <img src="https://anas.sidkos.com/css/img/page3.PNG" alt="" />
+      </div>
+    </div>
+    <div class="section-5 bg-blue">
+      <h3>TESTIMONIALS</h3>
+      <h1>What people say</h1>
+      <img src="https://anas.sidkos.com/css/img/page4.PNG" alt="" />
+    </div>
+    <div class="section-6 flex">
+      <div>
+        <h2>CONTACT</h2>
+         <h1 class="section-h1 mb-10">
+          Don't Hesitate to contact us for any information
+        </h1>
+
+        <p class="section-p mb-10">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque,
+          iusto?
+        </p>
+      </div>
+      <div class="form-container">
+        <form>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" required rows="5"></textarea>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  <div class="section-7 bg-blue flex">
+      <div>
+        <h1>agency</h1>
+      </div>
+      <div class="section-7flex">
+        <span>Home</span>
+        <span>About Us</span>
+        <span>Our Service</span>
+        <span>Support</span>
+      </div>
+    </div>
+  <div class="section-8 bg-blue">Copy @ Asif 2025</div>
+  </body>
+</html>
